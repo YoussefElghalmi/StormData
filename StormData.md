@@ -75,7 +75,7 @@ if (dim(stormData)[2] == 37) {
 hist(stormData$year, breaks = 30)
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+![plot of chunk unnamed-chunk-4](unnamed-chunk-4.png) 
 
 Based on the above histogram, we see that the number of events tracked starts to significantly increase around 1995. So, we use the subset of the data from 1990 to 2011 to get most out of good records.
 
@@ -231,7 +231,7 @@ injuriesPlot <- qplot(EVTYPE, data = injuries, weight = INJURIES, geom = "bar", 
 grid.arrange(fatalitiesPlot, injuriesPlot, ncol = 2)
 ```
 
-![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9.png) 
+![plot of chunk unnamed-chunk-9](unnamed-chunk-9.png) 
 
 Based on the above histograms, we find that **excessive heat** and **tornado** cause most fatalities; **tornato** causes most injuries in the United States from 1995 to 2011.
 
@@ -296,7 +296,7 @@ cropPlot<- qplot(EVTYPE, data = crop, weight = cropDamage, geom = "bar", binwidt
 grid.arrange(propertyPlot, cropPlot, ncol = 2)
 ```
 
-![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11.png) 
+![plot of chunk unnamed-chunk-11](unnamed-chunk-11.png) 
 
 Based on the above histograms, we find that **flood** and **hurricane/typhoon** cause most property damage; **drought** and **flood** causes most crop damage in the United States from 1995 to 2011.
 
